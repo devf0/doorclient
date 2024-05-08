@@ -1,0 +1,4 @@
+<%= button_to 'Login', user_doorauth_omniauth_authorize_path, method: :post %>
+<% if flash.now[:error] %>
+  <div class="error"><%= flash.now[:error] %></div>
+<% end %>
